@@ -1,0 +1,124 @@
+@media screen and (min-width:500px){
+
+body {
+    border-top: 4px solid #6D60A4;
+}
+ 
+header{
+    width: 100%;
+    display: flex;
+}    
+
+.nav-wrapper {
+    width: 65rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/* Wide header layout - fled */
+
+
+
+h1 {
+    position:relative;
+    left: 0;
+    top: 0.2rem;
+    transform: translate(0);
+}
+
+h1 img{
+    width: 10rem;
+}
+
+
+.btn-burger{
+    display: none;
+}
+
+.navigation{
+    position: relative;
+    display: flex;
+}
+
+
+header nav ul{
+    padding-top: 0.5rem;
+    display: flex;
+    margin-right: 0.6rem;
+    font-size: 1srem;
+}
+
+header nav ul li{
+    margin-right: 1.5rem;
+    font-weight: 500;
+}
+
+header nav ul a {
+    line-height: 1rem;
+    position: relative;
+    transition: all .3s;
+}
+
+header nav ul a:hover {
+    color: #A384BB;
+}
+
+header nav ul a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -.2rem;
+    right: 0;
+    height: .15rem;
+    background: #A384BB;
+    border-bottom: #A384BB;
+    transition: all .4s;
+    transform: translateY(-3rem);
+    opacity: 0;
+}
+
+
+header nav ul a:hover:after {
+    opacity: 1;
+    transform: translateY(-1.4rem);
+}
+
+
+
+.search {
+    width: 11rem;
+    border: 2px solid #6D60A4;
+    border-radius: 10rem;
+    padding: 0.3rem;
+
+}
+
+
+
+.search input {
+    display: inline-block;
+    border: none;
+}
+
+.btn-search{
+    right: 0.3rem;
+    top: 0;
+}
+
+
+
+/* header banner area */
+.banner-wrapper .banner-text{
+    top: 30%;
+}
+
+
+.banner-text>p{
+    font-size: 3.3rem;
+}
+
+
+
+
+}
