@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+
+/* common area */
+
+* {
+    box-sizing: border-box;
+  }
+
+  
+body {
+    font-size: 1rem;
+    font-family: 'Noto Sans', sans-serif;
+    color: #222;
+
+}
+
+p{
+    line-height: 1.2;
+}
+
+.hide {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+header {
+    width: 100%;
+}
+
+.nav-wrapper {
+    padding: 1rem 0;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    top: 1.2rem;
+    transform: translateX(-50%);
+}
+
+h1 img{
+    width: 9rem;
+}
+
+.btn-burger {
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/menu.png") no-repeat center;
+    margin-left: 1rem;
+
+}
+
+.btn-burger.active{
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/arrow-down.png") no-repeat center;
+}
+
+header nav ul{
+    display:none;
+}
+
+header nav.active {
+    display: inline-block;
+    width: 100%;
+    height: 30rem;
+    background-color: #6D60A4;
+    margin-top: 1.3rem;
+    text-align: center;
+    transition: 300ms ease-in;
+}
+
+header nav.active ul{
+    display: inline-block;
+    margin-top: 5rem;
+}
+
+header nav.active ul li{
+    padding: 2rem 0;
+    font-size: 2.2rem;
+}
+
+header nav.active li a{
+    color: #fff;
+}
+
+.search input{
+    display:none;
+}
+
+.btn-search{
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/search.png") no-repeat center;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+footer {
+    background-color: #6D60A4;
+    color: #fff;
+    padding: 3rem 1rem;
+    display: flex;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    line-height: 1.1;
+}
+
+
+@media screen and (min-width:500px){
+
+    body {
+        border-top: 4px solid #6D60A4;
+    }
+     
+    header{
+        width: 100%;
+        display: flex;
+    }    
+    
+    .nav-wrapper {
+        width: 65rem;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    
+    /* Wide header layout - fled */
+    
+    
+    
+    h1 {
+        position:relative;
+        left: 0;
+        top: 0.2rem;
+        transform: translate(0);
+    }
+    
+    h1 img{
+        width: 10rem;
+    }
+    
+    
+    .btn-burger{
+        display: none;
+    }
+    
+    .navigation{
+        position: relative;
+        display: flex;
+    }
+    
+    
+    header nav ul{
+        padding-top: 0.5rem;
+        display: flex;
+        margin-right: 0.6rem;
+        font-size: 1srem;
+    }
+    
+    header nav ul li{
+        margin-right: 1.5rem;
+        font-weight: 500;
+    }
+    
+    header nav ul a {
+        line-height: 1rem;
+        position: relative;
+        transition: all .3s;
+    }
+    
+    header nav ul a:hover {
+        color: #A384BB;
+    }
+    
+    header nav ul a:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -.2rem;
+        right: 0;
+        height: .15rem;
+        background: #A384BB;
+        border-bottom: #A384BB;
+        transition: all .4s;
+        transform: translateY(-3rem);
+        opacity: 0;
+    }
+    
+    
+    header nav ul a:hover:after {
+        opacity: 1;
+        transform: translateY(-1.4rem);
+    }
+    
+    
+    
+    .search {
+        width: 11rem;
+        border: 2px solid #6D60A4;
+        border-radius: 10rem;
+        padding: 0.3rem;
+    
+    }
+    
+    
+    
+    .search input {
+        display: inline-block;
+        border: none;
+    }
+    
+    .btn-search{
+        right: 0.3rem;
+        top: 0;
+    }
+
+
+
+
+/* footer */
+footer{
+    padding: 5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-top: 7rem;
+}
+    
+}    

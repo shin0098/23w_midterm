@@ -119,6 +119,71 @@ header nav ul a:hover:after {
 }
 
 
+/* Section */
+
+
+.info-wrap{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.2rem;
+    width: 57rem;
+    margin: 0 auto;
+}
+
+.info-wrap img{
+    border-radius: 3rem 0 0 0;
+}
+
+section.info p{
+    padding: 1rem 0;
+    margin-bottom: 6rem;
+}
+
+
+/* section product */
+
+.product-wrap h2{
+margin-bottom: 3.5rem;
+}
+
+.product-wrap{
+    width: 65rem;
+
+}
+
+.product-wrap h3 {
+    margin-bottom: 0.5rem;
+}
+
+.product-wrap ul{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 1.2rem;
+}
+
+.product-wrap ul li{
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 0.9rem;
+    text-align: center;
+}
+
+/* using flex to reverse order of h3 and picture */
+
+.product-wrap img{
+    height: 16rem;
+
+}
+
+/* footer */
+footer{
+    padding: 5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-top: 7rem;
+}
 
 
 }
