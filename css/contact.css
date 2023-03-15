@@ -162,6 +162,10 @@ textarea {
         height: 20rem;
     }
 
+    section {
+        width: 70%;
+    }
+
 
     section .grid{
         display: grid;
@@ -177,14 +181,18 @@ textarea {
 
     .contact-wrapper.number{
         grid-area: 1;
+        margin-top: 3rem;
+    }
 
+    .contact-wrapper.number h3{
         margin-top: 3rem;
     }
 
     .contact-wrapper.time{
         grid-area: 2;
-        height: 200px;
+        height: 170px;
         grid-column: 1/3;
+        font-size: 1rem;
     }
 
     .contact-wrapper.map{
