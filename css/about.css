@@ -53,8 +53,12 @@ h2 {
 
 
 .section-wrap {
-    width: 80%;
+    width: 75%;
     margin: 4rem auto;
+}
+
+.section-wrap{
+    width: 75%;
 }
 
 h3 {
