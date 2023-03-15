@@ -60,15 +60,13 @@ section {
     width: 85%;
     padding: 2rem;
     margin-top: 3rem;
-    /* background: linear-gradient(white, white) padding-box,
-        linear-gradient(to right, rgb(193, 159, 222), rgb(72, 39, 191)) border-box; */
     background-color: #F6EBFF;
     border-radius: 2rem;
     border: 3px solid transparent;
     margin: 3rem auto;
 }
 
-.contact-wrapper h3{
+.contact-wrapper h3 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
     color: rgb(1, 1, 143);
@@ -80,24 +78,80 @@ section {
     height: 300px;
 }
 
-.contact .map h3{
+.contact .map h3 {
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 2rem;
 }
 
-.contact-wrapper p{
+.contact-wrapper p {
     margin-bottom: 0.3rem;
 }
 
-.contact-wrapper.time{
+.contact-wrapper.time {
     font-size: 0.8rem;
 }
 
+/* contact form */
 
 
+.contact-form h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #222;
+    font-weight: 500;
+    margin: 5rem 0;
+}
 
 
+form {
+    max-width: 90%;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, rgb(2, 2, 131), rgb(149, 55, 197)) border-box;
+    border-radius: 2rem;
+    border: 3px solid transparent;
+}
+
+
+.contact-form form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #6D60A4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    font-size: 1rem;
+    transition: 2ms;
+}
+
+.contact-form button:hover {
+    background-color: #A384BB;
+}
+
+form small {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #777;
+}
 
 
 
