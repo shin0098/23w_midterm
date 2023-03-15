@@ -115,6 +115,7 @@ section.about p {
     flex-direction: column;
     justify-content: normal;
     align-items: normal;
+    flex-wrap: wrap;
 }
 
 .team-wrap li {
@@ -148,8 +149,7 @@ section.about p {
     width: 75%;
     display: block;
     align-self: flex-end;
-    order: 0;
-    text-align: right;
+
 }
 
 .team-wrap li:nth-of-type(1) p,
