@@ -53,33 +53,35 @@ h2 {
 
 
 .section-wrap {
-    width: 75%;
+    width: 80%;
     margin: 4rem auto;
 }
 
-.section-wrap{
-    width: 75%;
-}
+
 
 h3 {
     font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
-    ;
 }
 
 
 /* about */
 
-section.team {
-    width: 100%;
+section.about {
+    padding: 2rem 0;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, rgb(57, 10, 228) 0%, rgb(153, 29, 210) 100%) 
+    100% 0 100% 0/3px 0 3px 0 stretch;
 }
 
 
 section.about p {
     margin-top: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: left;
+ 
 }
 
 
@@ -89,7 +91,16 @@ section.about p {
     text-align: center;
 }
 
+.ceo-wrapper img{
+    border-radius: 20%;
+}
+
 /* team */
+
+section.team {
+    width: 100%;
+}
+
 
 
 .ceo-wrapper p:nth-of-type(1) {
@@ -152,9 +163,14 @@ section.about p {
 
 }
 
-.team-wrap li:nth-of-type(1) p,
-.team-wrap li:nth-of-type(3) p{
-    text-align: left;
+.team-wrap li:nth-of-type(1) img,
+.team-wrap li:nth-of-type(3) img{
+    border-radius: 20% 0 0 20%;
+}
+
+.team-wrap li:nth-of-type(2) img,
+.team-wrap li:nth-of-type(4) img{
+    border-radius: 0 20% 20% 0 ;
 }
 
 
