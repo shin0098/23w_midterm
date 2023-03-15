@@ -57,13 +57,14 @@ section {
 }
 
 .contact-wrapper {
+    width: 85%;
     padding: 2rem;
     margin-top: 3rem;
     background: linear-gradient(white, white) padding-box,
         linear-gradient(to right, rgb(193, 159, 222), rgb(72, 39, 191)) border-box;
-    border-radius: 30em;
+    border-radius: 20rem;
     border: 3px solid transparent;
-    margin-bottom: 3rem;
+    margin: 3rem auto;
 }
 
 .contact-wrapper h3{
@@ -77,6 +78,11 @@ section {
     width: 300px;
 }
 
+.contact .map h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
 
 
 
