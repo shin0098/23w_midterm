@@ -1,5 +1,9 @@
 
 
+/* Main Homepage CSS */
+/* Mobile first */
+/* header and footer css codes are in common css */
+
 
 /* banner */
 
@@ -23,7 +27,6 @@
     display:none;
 }
 
-
 .banner-text>p{
     font-size: 3rem;
     font-weight: 600;
@@ -39,7 +42,7 @@
     text-align: center;
 }
 
-.banner-text button a{
+.banner-text button{
     color: #fff;
     font-weight: 600;
 }
@@ -117,6 +120,8 @@ section.product h2{
 }
 
 
+/******************** wide screen viewport ********************/
+
 @media screen and (min-width:500px){
 
 
@@ -136,6 +141,7 @@ section.product h2{
     /* Section */
     
     
+    /* grid layout */
     .info-wrap{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
@@ -169,6 +175,7 @@ section.product h2{
         margin-bottom: 0.5rem;
     }
     
+    /* change layout to grid */
     .product-wrap ul{
         display: grid;
         grid-template-columns: 50% 50%;

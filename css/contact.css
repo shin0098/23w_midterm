@@ -1,3 +1,12 @@
+
+/* Contact page CSS */
+/* Mobile first */
+/* header and footer css codes are in common css */
+
+
+
+
+
 h2 {
     font-size: 2.3rem;
 }
@@ -146,6 +155,7 @@ textarea {
 }
 
 
+/******************** wide screen viewport ********************/
 
 
 @media screen and (min-width:500px) {
@@ -166,6 +176,7 @@ textarea {
         width: 70%;
     }
 
+    /* changed layout to grid from mobile screen*/
 
     section .grid{
         display: grid;
@@ -201,6 +212,7 @@ textarea {
         grid-column: 1/3;
     }
 
+    /* google map */
     .contact iframe{
         width: 100%;
         height: 300px;

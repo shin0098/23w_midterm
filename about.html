@@ -13,12 +13,16 @@
     <script src="js/default.js"></script>
     <!-- Jquery for mobile version hamburger menu -->
 </head>
+<body>
+<!-------------------------- Common header area ------------------------->
 <header>
     <div class="nav-wrapper">
         <div>
             <h1><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
+            <!-- go to homepage after click logo image -->
             <button type=button aria-label="mobile-menu" class="btn-burger" id="Burger"><span
                     class="hide">hamburger</span></button>
+                       <!-- only for mobile menu / hidden button on wide screen -->
         </div>
         <div class="navigation">
             <nav>
@@ -27,6 +31,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <!-- main navigation menu -->
             </nav>
             <div class="search">
                 <input type="search" name="search" id="NavSearch" placeholder="Search" title="search">
@@ -36,6 +41,8 @@
         </div>
     </div>
 </header>
+
+<!-------------------------- Common header area ----------------------->
 <div class="banner-wrapper">
     <picture>
         <source srcset="images/about-banner.jpg" media="(min-width:500px)">
@@ -46,7 +53,6 @@
             About Us
         </h2>
     </div>
-
 </div>
 
 <section class="section-wrap about">
@@ -58,7 +64,7 @@
     <div class="ceo-wrapper">
     <h4>CEO</h4>
     <div class="ceo-flex">
-        <!-- using flex to layout -->
+        <!-- using flex layout -->
     <picture>
         <source srcset="images/woman1.jpg" media="(min-width:500px)">
         <img src="images/woman1-mobile.jpg" alt="ceo of mammoth">
@@ -68,11 +74,14 @@
 </div>
     <div class="team-wrap">
         <h3>Our Team</h3>
+        <!-- list for team members -->
+        <!-- grid layout for web viewport -->
         <ul>
             <li>
                 <picture>
                     <source srcset="images/man1.jpg" media="(min-width:500px)">
                     <img src="images/man1-mobile.jpg" alt="team member photo">
+                     <!-- defaul image(mobile ver)-> (over 500px) -> change wide image -->
                 </picture>
                 <p>John Davis</p>
                 <p>Software Engineer</p>
@@ -82,6 +91,7 @@
                 <picture>
                     <source srcset="images/woman2.jpg" media="(min-width:500px)">
                     <img src="images/woman2-mobile.jpg" alt="team memeber photo">
+                     <!-- defaul image(mobile ver)-> (over 500px) -> change wide image -->
                 </picture>
                 <p>Erica Browser</p>
                 <p>Product Manager</p>
@@ -91,6 +101,7 @@
                 <picture>
                     <source srcset="images/man2.jpg" media="(min-width:500px)">
                     <img src="images/man2-mobile.jpg" alt="team memeber photo">
+                     <!-- defaul image(mobile ver)-> (over 500px) -> change wide image -->
                 </picture>
                 <p>Michael Colin</p>
                 <p>Hardware Engineer</p>
@@ -102,32 +113,36 @@
 </section>
 
 
+
+
+<!-------------common footer area--------------->
 <footer>
-    <p class="contact">
+    <div class="contact">
         <ul>
             <li>Contact Us</li>
             <li>Tel : 613 - 777 - 7777 </li>
             <li>Fax : 613 - 777 - 7777</li>
             <li>mammoth@gmail.com</li>
         </ul>
-    </p>
-    <p class="hours">
+    </div>
+    <div class="hours">
         <ul>
             <li>Store Hours</li>
             <li>Mon - Fri : 10:00 AM - 5:00</li>
             <li>Sat: 11:00 AM - 6:00 PM</li>
             <li>Sun: 12:00 AM - 4:00 PM</li>
         </ul>
-    </p>
-    <p class="sns">
+    </div>
+    <div class="sns">
         <ul>
             <li>Follow Us</li>
-            <li><a>Instagram</a></li>
-            <li><a>facebook</a></li>
-            <li><a>tictok</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Tictok</a></li>
         </ul>
-    </p>
+    </div>
 </footer>
+<!-------------common footer area--------------->
 </body>
 
 </html>

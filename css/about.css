@@ -1,3 +1,14 @@
+/* Contact page CSS */
+/* Mobile first */
+/* header and footer css codes are in common css */
+
+
+
+
+
+
+
+
 /******************* Mobile ******************/
 
 h2 {
@@ -158,6 +169,8 @@ section.team {
 
 /* using flex to row layout */
 
+/* move .team-wrap to right side of screen*/
+
 .team-wrap li:nth-of-type(1),
 .team-wrap li:nth-of-type(3){
     width: 75%;
@@ -242,6 +255,8 @@ font-size: 1.7rem;
 
 }
 
+
+/* flex layout */
 .team-wrap ul {
     display: flex;
     flex-direction: row;
@@ -254,6 +269,7 @@ section .team-wrap li {
     align-self: auto;
 }
 
+/* re-alinged flex layout */
 .team-wrap li:nth-of-type(1),
 .team-wrap li:nth-of-type(2),
 .team-wrap li:nth-of-type(3){
@@ -273,7 +289,8 @@ section .team-wrap li img{
 }
 
 
-/* using flex to row layout */
+/* using flex  layout */
+/* diffrent syle flex layout from mobile*/
 
 
 .team-wrap li:nth-of-type(1) img,

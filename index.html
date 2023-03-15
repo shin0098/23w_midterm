@@ -13,12 +13,16 @@
     <script src="js/default.js"></script>
     <!-- Jquery for mobile version hamburger menu -->
 </head>
+<body>
+<!-------------------------- Common header area ------------------------->
 <header>
     <div class="nav-wrapper">
         <div>
             <h1><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
+            <!-- go to homepage after click logo image -->
             <button type=button aria-label="mobile-menu" class="btn-burger" id="Burger"><span
                     class="hide">hamburger</span></button>
+            <!-- only for mobile menu / hidden button on wide screen -->
         </div>
         <div class="navigation">
             <nav>
@@ -27,6 +31,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <!-- main navigation menu -->
             </nav>
             <div class="search">
                 <input type="search" name="search" id="NavSearch" placeholder="Search" title="search">
@@ -36,22 +41,23 @@
         </div>
     </div>
 </header>
+
+<!-------------------------- Common header area ----------------------->
 <div class="banner-wrapper">
     <picture>
         <source srcset="images/banner.jpg" media="(min-width:500px)">
         <img src="images/banner-1000.jpg" alt="mammoth-keyboard">
     </picture>
+    <!-- div for position absolute -->
     <div class="banner-text">
         <p>
             Get the Best Keyboard
         </p>
         <button class="banner-btn">
-            <a href="#">Learn More</a>
+            Learn More
         </button>
     </div>
-
 </div>
-
 <section class="section-wrap info">
     <h2>mammoth</h2>
     <div class="info-wrap">
@@ -72,6 +78,7 @@
 <section class="section-wrap product">
     <h2>Product</h2>
     <div class="product-wrap">
+        <!-- using list for product's list -->
         <ul>
             <li>
                 <h3>Keyboard</h3>
@@ -80,6 +87,7 @@
                             <source srcset="images/keyboard.jpg" media="(min-width:500px)">
                             <img src="images/keyboard-1000.jpg" alt="Keyboard">
                     </picture>
+                    <!-- defaul image(mobile ver)-> (over 500px) -> change wide image -->
                 </a>
             </li>
             <li>
@@ -89,6 +97,7 @@
                         <source srcset="images/keycaps.jpg" media="(min-width:500px)">
                         <img src="images/keycaps-1000.jpg" alt="Keycaps">
                     </picture>
+                        <!-- defaul image(mobile ver)-> (over 500px) -> change wide image -->
                 </a>
             </li>
             <li>
@@ -98,6 +107,7 @@
                         <source srcset="images/cleaning.jpg" media="(min-width:500px)">
                         <img src="images/cleaning-1000.jpg" alt="cleaning">
                     </picture>
+                        <!-- defaul image(mobile ver)-> (over 500px) -> change wide image -->
                 </a>
             </li>
             <li>
@@ -107,6 +117,7 @@
                         <source srcset="images/mouse.jpg" media="(min-width:500px)">
                         <img src="images/mouse-1000.jpg" alt="mouse">
                     </picture>
+                        <!-- defaul image(mobile ver)-> (over 500px) -> change wide image -->
                 </a>
             </li>
         </ul>
@@ -114,32 +125,34 @@
     </div>
 </section>
 
+<!-------------common footer area--------------->
 <footer>
-    <p class="contact">
+    <div class="contact">
         <ul>
             <li>Contact Us</li>
             <li>Tel : 613 - 777 - 7777 </li>
             <li>Fax : 613 - 777 - 7777</li>
             <li>mammoth@gmail.com</li>
         </ul>
-    </p>
-    <p class="hours">
+    </div>
+    <div class="hours">
         <ul>
             <li>Store Hours</li>
             <li>Mon - Fri : 10:00 AM - 5:00</li>
             <li>Sat: 11:00 AM - 6:00 PM</li>
             <li>Sun: 12:00 AM - 4:00 PM</li>
         </ul>
-    </p>
-    <p class="sns">
+    </div>
+    <div class="sns">
         <ul>
             <li>Follow Us</li>
-            <li><a>Instagram</a></li>
-            <li><a>facebook</a></li>
-            <li><a>tickok</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Tictok</a></li>
         </ul>
-    </p>
+    </div>
 </footer>
+<!-------------common footer area--------------->
 </body>
 
 </html>

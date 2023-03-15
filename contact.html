@@ -13,12 +13,16 @@
     <script src="js/default.js"></script>
     <!-- Jquery for mobile version hamburger menu -->
 </head>
+<body>
+<!-------------------------- Common header area ------------------------->
 <header>
     <div class="nav-wrapper">
         <div>
             <h1><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
+            <!-- go to homepage after click logo image -->
             <button type=button aria-label="mobile-menu" class="btn-burger" id="Burger"><span
                     class="hide">hamburger</span></button>
+                       <!-- only for mobile menu / hidden button on wide screen -->
         </div>
         <div class="navigation">
             <nav>
@@ -27,6 +31,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <!-- main navigation menu -->
             </nav>
             <div class="search">
                 <input type="search" name="search" id="NavSearch" placeholder="Search" title="search">
@@ -36,6 +41,8 @@
         </div>
     </div>
 </header>
+
+<!-------------------------- Common header area ----------------------->
 <div class="banner-wrapper">
     <picture>
         <source srcset="images/contact-banner.jpg" media="(min-width:500px)">
@@ -73,14 +80,16 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445522021247!2d-75.75751172354178!3d45.34993154105554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2z7JWM6rOk7YKoIOy5vOumrOyngCDsmKTtg4DsmYAg7Lqg7Y287Iqk!5e0!3m2!1sen!2sca!4v1678849523058!5m2!1sen!2sca"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- Import a map from Google -->
     </div> 
     </div>
 
 
 
-
-
 </section>
+
+<!-- Contact Form area -->
 
 <section class="contact-form">
     <h3>We'd love to here from you</h3>
@@ -103,32 +112,36 @@
 
 </section>
 
+
+
+<!-------------common footer area--------------->
 <footer>
-    <p class="contact">
+    <div class="contact">
         <ul>
             <li>Contact Us</li>
             <li>Tel : 613 - 777 - 7777 </li>
             <li>Fax : 613 - 777 - 7777</li>
             <li>mammoth@gmail.com</li>
         </ul>
-    </p>
-    <p class="hours">
+    </div>
+    <div class="hours">
         <ul>
             <li>Store Hours</li>
             <li>Mon - Fri : 10:00 AM - 5:00</li>
             <li>Sat: 11:00 AM - 6:00 PM</li>
             <li>Sun: 12:00 AM - 4:00 PM</li>
         </ul>
-    </p>
-    <p class="sns">
+    </div>
+    <div class="sns">
         <ul>
             <li>Follow Us</li>
-            <li><a>Instagram</a></li>
-            <li><a>facebook</a></li>
-            <li><a>tictok</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Tictok</a></li>
         </ul>
-    </p>
+    </div>
 </footer>
+<!-------------common footer area--------------->
 </body>
 
 </html>

@@ -1,8 +1,15 @@
 
+/* Common css style */
+
+/* Header for all pages */
+/* Footer for all pages */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
 
 
 /* common area */
+
 
 * {
     box-sizing: border-box;
@@ -10,7 +17,7 @@
 
   
 body {
-    font-size: 1rem;
+    font-size: 1rem; 
     font-family: 'Noto Sans', sans-serif;
     color: #222;
 
@@ -19,6 +26,7 @@ body {
 p{
     line-height: 1.2;
 }
+
 
 .hide {
     overflow: hidden;
@@ -29,6 +37,8 @@ p{
     height: 1px;
     clip: rect(1px, 1px, 1px, 1px);
 }
+
+/* Common header */
 
 header {
     width: 100%;
@@ -57,15 +67,19 @@ h1 img{
 
 }
 
+/* after being activated, button changes from hamburgur to arrow  */
+
 .btn-burger.active{
     width: 2rem;
     height: 2rem;
     background: url("../images/arrow-down.png") no-repeat center;
 }
 
+
 header nav ul{
     display:none;
 }
+
 
 header nav.active {
     display: inline-block;
@@ -76,6 +90,7 @@ header nav.active {
     text-align: center;
     transition: 300ms ease-in;
 }
+
 
 header nav.active ul{
     display: inline-block;
@@ -90,6 +105,9 @@ header nav.active ul li{
 header nav.active li a{
     color: #fff;
 }
+
+/* jquery active navition style */
+
 
 .search input{
     display:none;
@@ -134,7 +152,7 @@ footer {
         margin: auto;
     }
     
-    /* Wide header layout - fled */
+    /* Wide header layout - flex */
     
     
     
@@ -153,6 +171,8 @@ footer {
     .btn-burger{
         display: none;
     }
+
+    /* hide humburgur button for wide screen */
     
     .navigation{
         position: relative;
@@ -164,7 +184,7 @@ footer {
         padding-top: 0.5rem;
         display: flex;
         margin-right: 0.6rem;
-        font-size: 1srem;
+        font-size: 1rem;
     }
     
     header nav ul li{
@@ -201,6 +221,9 @@ footer {
         opacity: 1;
         transform: translateY(-1.4rem);
     }
+
+    /* animation for moving bar 
+    from top of the body to navigation menu*/
     
     
     
@@ -229,10 +252,15 @@ footer {
 
 /* footer */
 footer{
-    padding: 5rem 1rem;
+    padding: 5rem 3rem;
     font-size: 1rem;
     line-height: 1.2;
     margin-top: 7rem;
+}
+
+footer a{
+    color:#fff;
+    text-decoration: none;
 }
     
 }    
