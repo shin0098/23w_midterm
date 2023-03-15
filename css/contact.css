@@ -59,7 +59,6 @@ section {
 .contact-wrapper {
     width: 85%;
     padding: 2rem;
-    margin-top: 3rem;
     background-color: #F6EBFF;
     border-radius: 2rem;
     border: 3px solid transparent;
@@ -146,12 +145,6 @@ textarea {
     background-color: #A384BB;
 }
 
-form small {
-    display: block;
-    margin-top: 5px;
-    font-size: 14px;
-    color: #777;
-}
 
 
 
@@ -169,4 +162,39 @@ form small {
         height: 20rem;
     }
 
+
+    section .grid{
+        display: grid;
+        grid-gap: 1rem;
+        margin-top: 5rem;
+    }
+
+    .contact-wrapper {
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .contact-wrapper.number{
+        grid-area: 1;
+
+        margin-top: 3rem;
+    }
+
+    .contact-wrapper.time{
+        grid-area: 2;
+        height: 200px;
+        grid-column: 1/3;
+    }
+
+    .contact-wrapper.map{
+        grid-area: 3;
+        align-self: center;
+        grid-column: 1/3;
+    }
+
+    .contact iframe{
+        width: 100%;
+        height: 300px;
+    }
 }
