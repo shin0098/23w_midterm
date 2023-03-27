@@ -13,7 +13,10 @@
 
 h2 {
     font-size: 2.5rem;
+    background-color:none;
 }
+
+/* error fix mar27 */
 
 .banner-wrapper {
     position: relative;
