@@ -27,11 +27,11 @@
     display:none;
 }
 
-.banner-text>h3{
+.banner-text>p{
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
-    background-color: none;
+    background-color: #6D60A4;
 }
 
 /* error fix mar27 */
