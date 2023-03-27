@@ -27,11 +27,14 @@
     display:none;
 }
 
-.banner-text>p{
+.banner-text>h3{
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
+    background-color: none;
 }
+
+/* error fix mar27 */
 
 .banner-text button{
     width: 10rem;
