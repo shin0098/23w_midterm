@@ -196,6 +196,7 @@ footer {
         line-height: 1rem;
         position: relative;
         transition: all .3s;
+        color:#6D60A4;
     }
     
     header nav ul a:hover {
